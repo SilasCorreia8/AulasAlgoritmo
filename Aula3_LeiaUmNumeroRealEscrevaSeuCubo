@@ -1,0 +1,29 @@
+//    var 
+//        n1,res:Real
+//    Inicio
+//        ler n1;
+//        res <- n1*n1*n1
+//        escrever"Cubo " = res
+//    Fim
+    
+package aula3_leiaumnumerorealescrevaseucubo;
+
+import javax.swing.JOptionPane;
+
+public class Aula3_LeiaUmNumeroRealEscrevaSeuCubo {
+    public static void main(String[] args) {
+        
+        double n1,r;
+    
+        String sn1;
+        
+        sn1=JOptionPane.showInputDialog(null, "Digite o valor:");
+        n1 = Double.parseDouble(sn1);
+        
+        r = n1*n1*n1;
+        
+        JOptionPane.showMessageDialog(null, "O resultado do cubo é: " + r);
+        
+    }
+    
+}
