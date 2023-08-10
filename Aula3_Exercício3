@@ -1,0 +1,35 @@
+//var
+//    n1:Inteiro
+//    quad,raizq:Real
+//Inicio
+//    ler n1;
+//    quad = math.pow(n1, 2);
+//    raizq = math.sqrt(n1);
+//    escreva "O quadrado de "+n1+ " é: " +quad+ "\n A Raiz Quadrada de " +n1+ " é: " + raizq
+//    
+//Fim
+package aula3lernumerointescreverquad.raiz;
+
+import javax.swing.JOptionPane;
+
+public class Aula3LerNumeroIntEscreverQuadRaiz {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        int n1;
+        double quad,raizq;
+        
+        String sn1;
+        
+        sn1=JOptionPane.showInputDialog(null, "Digite o valor: ");
+        
+        n1 = Integer.parseInt(sn1);
+        
+       quad = (double)Math.pow(n1, 2);
+       raizq = (double)Math.sqrt(n1);
+       
+       JOptionPane.showMessageDialog(null, n1 + " ao quadrado é: "+quad+"\nE a raiz quadrada de "+n1+" é: " + raizq);
+    }
+    
+}
