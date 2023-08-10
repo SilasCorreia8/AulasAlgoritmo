@@ -1,0 +1,38 @@
+//var
+//    n1,n2:Inteiro
+//    r:Real
+//Inicio
+//    ler n1;
+//    ler n2;
+//    r <- n1 % n2;
+//    Escreva "O Resto da divisão do primeiro valor com o segundo é " + r;
+//Fim
+        
+package aula3_ler2numerosintescreverrestodadiv;
+
+import javax.swing.JOptionPane;
+
+public class Aula3_Ler2NumerosIntEscreverRestoDaDiv {
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        int n1,n2;
+        double r;
+        
+        String sn1,sn2;
+        
+        sn1=JOptionPane.showInputDialog(null, "Digite o Primeiro valor:");
+        sn2=JOptionPane.showInputDialog(null, "Digite o Segundo valor:");
+        
+        n1 = Integer.parseInt(sn1);
+        n2 = Integer.parseInt(sn2);
+        
+        
+        r = n1 % n2;
+        
+        JOptionPane.showMessageDialog(null, "O Resto da divisão do primeiro valor com o segundo é: " + r);
+           
+    }
+    
+}
