@@ -1,0 +1,39 @@
+//var
+//    n1,n2,n3,soma,triplo:Real
+//Inicio
+//    ler n1
+//    ler n2
+//    ler n3
+//    soma <- n1+n2+n3
+//    triplo <- soma*3
+//    Escreva <- triplo
+//Fim
+
+package aula3_exercício4;
+
+import javax.swing.JOptionPane;
+
+public class Aula3_Exercício4 {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        double n1,n2,n3,soma,triplo;
+        
+        String sn1,sn2,sn3;
+        
+        sn1 = JOptionPane.showInputDialog(null, "Digite o primeiro valor:");
+        sn2 = JOptionPane.showInputDialog(null, "Digite o segundo valor:");
+        sn3 = JOptionPane.showInputDialog(null, "Digite o terceiro valor:");
+        
+        n1 = Double.parseDouble(sn1);
+        n2 = Double.parseDouble(sn1);
+        n3 = Double.parseDouble(sn1);
+        
+        soma = n1 + n2 + n3;
+        triplo = soma*3;
+        
+        JOptionPane.showMessageDialog(null, "A soma de "+n1+" + "+n2+" + "+n3+" é: " +soma+ "\nO triplo da soma é: " + triplo);
+    }
+    
+}
