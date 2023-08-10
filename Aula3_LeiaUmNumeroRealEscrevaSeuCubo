@@ -22,7 +22,7 @@ public class Aula3_LeiaUmNumeroRealEscrevaSeuCubo {
         
         r = n1*n1*n1;
         
-        JOptionPane.showMessageDialog(null, "O resultado do cubo é: " + r);
+        JOptionPane.showMessageDialog(null, "O resultado do cubo de "+n1+ " é: " + r);
         
     }
     
