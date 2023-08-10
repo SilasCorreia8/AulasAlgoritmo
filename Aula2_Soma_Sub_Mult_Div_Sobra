@@ -1,0 +1,28 @@
+package aula2;
+
+import javax.swing.JOptionPane;
+
+public class Aula2 {
+    //Classe principal do aplicativo
+    public static void main(String[] args) {
+        
+        double n1,n2,soma,sub,mult,div,sobra;
+        
+        String sn1,sn2;
+        
+        sn1=JOptionPane.showInputDialog(null,"Digite o primeiro valor:");
+        sn2=JOptionPane.showInputDialog(null,"Digite o segundo valor:");
+        
+        n1 = Double.parseDouble(sn1);
+        n2 = Double.parseDouble(sn2);
+        
+        soma = n1 + n2;
+        sub = n1 - n2;
+        mult = n1 * n2;
+        div = n1 / n2;
+        sobra = n1 % n2;
+        
+        JOptionPane.showMessageDialog(null, "O resultado da soma é  " + soma + "\nO resultado da subtração é  " + sub + "\nO resultado da multiplicação é " + mult + "\nO resultado da divisão é " + div + "\nO resultado da sobra é " + sobra);
+    }
+    
+}
