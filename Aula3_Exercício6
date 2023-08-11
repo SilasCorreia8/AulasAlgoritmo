@@ -1,0 +1,31 @@
+//var
+//    salario,salario2:Real
+//Inicio
+//    ler salario
+//    acrescimo <- salario * 0.15
+//    salario2 <-  salario + acrescimo  
+//    Escreva salario2 
+//Fim
+package aula3_exercício6;
+
+import javax.swing.JOptionPane;
+
+public class Aula3_Exercício6 {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        double salario,salario2,acrescimo;
+        
+        String stSalario;
+        
+        stSalario = JOptionPane.showInputDialog(null, "Digite o seu salario:");
+        
+        salario = Double.parseDouble(stSalario);
+        
+        acrescimo = salario * 0.15;
+        salario2 = salario + acrescimo;
+        
+        JOptionPane.showMessageDialog(null, "O seu salario com o acréscimo de 15% é: " + salario2);
+    }
+}
