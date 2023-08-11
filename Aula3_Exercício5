@@ -1,0 +1,30 @@
+//var
+//    n1,dolar:Real
+//Inicio
+//    ler n1
+//    dolar <- n1*5.00
+//    escreva dolar
+//Fim
+package aula3_exercício5;
+    
+import javax.swing.JOptionPane;
+
+public class Aula3_Exercício5 {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        double n1,dolar;
+        
+        String sn1;
+        
+        sn1 = JOptionPane.showInputDialog(null, "Digite o valor:");
+        
+        n1 = Double.parseDouble(sn1);
+        
+        dolar = n1*5;
+        
+        JOptionPane.showMessageDialog(null, "O valor em dolar é: " + dolar);
+    }
+    
+}
