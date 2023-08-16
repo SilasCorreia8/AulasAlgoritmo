@@ -1,0 +1,29 @@
+// var
+//     salario1, inss, salario2: Real
+// Inicio
+//     ler salario1
+//     inss <- salario1 * 0.14 - salario1
+//     salario2 <- salario1 - inss
+//     escreval salario2
+// Fim
+
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        
+        double salario1,salario2,inss;
+
+        String stSalario1;
+
+        stSalario1 = JOptionPane.showInputDialog(null, "Digite o salario:");
+        
+        salario1 = Double.parseDouble(stSalario1);
+
+        inss = salario1 * 14 / 100;
+        salario2 = salario1 - inss;
+
+        JOptionPane.showMessageDialog(null, "O seu salario com com o desconto de "+inss+" é: " + salario2);
+
+    }
+}
