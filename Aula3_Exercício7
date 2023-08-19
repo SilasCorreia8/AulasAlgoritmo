@@ -7,6 +7,8 @@
 //     escreval salario2
 // Fim
 
+import java.text.DecimalFormat;
+
 import javax.swing.JOptionPane;
 
 public class App {
@@ -20,10 +22,11 @@ public class App {
         
         salario1 = Double.parseDouble(stSalario1);
 
-        inss = salario1 * 14 / 100;
+        DecimalFormat corte = new DecimalFormat("0.0");
+        inss = salario1 * 0.14;
         salario2 = salario1 - inss;
 
-        JOptionPane.showMessageDialog(null, "O seu salario com com o desconto de "+inss+" é: " + salario2);
+        JOptionPane.showMessageDialog(null, "O seu salario com com o desconto de "+corte.format(inss)+" é: " + salario2);
 
     }
 }
